@@ -1,0 +1,185 @@
+:root{
+  --bg:#ffffff;
+  --card:#ffffff;
+  --ink:#333333;
+  --muted:#666666;
+  --accent:#e53935;   /* красный акцент */
+  --ok:#43a047;
+  --warn:#fb8c00;
+  --line:#e5e7eb;
+}
+html,body{height:100%}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font:16px/1.6 "Times New Roman", Georgia, serif;
+  color:var(--ink);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.wrap{max-width:1000px; margin:0 auto; padding:28px 18px 64px}
+
+header{
+  background:#fafafa;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:24px 20px;
+  margin-bottom:22px;
+}
+
+h1{margin:0 0 6px; font-size:28px; line-height:1.25; letter-spacing:.2px}
+.subtitle{color:var(--muted)}
+
+nav{margin:14px 0 0; display:flex; flex-wrap:wrap; gap:10px}
+nav a{
+  text-decoration:none;
+  color:var(--ink);
+  background:#fff;
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:14px;
+  transition:.15s ease;
+}
+nav a:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+section{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:20px 18px;
+  margin:16px 0;
+}
+
+h2{margin:0 0 10px; font-size:22px}
+h3{margin:18px 0 8px; font-size:18px}
+p{margin:8px 0}
+ul{margin:8px 0 8px 22px}
+li{margin:4px 0}
+
+.note{
+  padding:10px 12px;
+  border-left:4px solid var(--accent);
+  background:#fff5f5;
+  border-radius:8px;
+}
+
+.grid{display:grid; gap:14px}
+@media (min-width:780px){ .grid.two{grid-template-columns:1fr 1fr} }
+
+code, .mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  color:#1f2937;
+}
+
+pre{
+  background:#f7f7f9;
+  border:1px solid #e4e6eb;
+  border-radius:10px;
+  padding:12px 14px;
+  overflow:auto;
+  line-height:1.45;
+  margin:10px 0;
+}
+
+/* скрываем исходник PlantUML */
+.is-hidden { 
+  display: none !important; 
+}
+
+.kv{margin:6px 0 0 22px}
+.kv li{list-style:"— "; padding-left:6px}
+
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:8px 0}
+.chip{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:4px 8px;
+  border-radius:999px;
+  font-size:13px;
+}
+
+/* Footer + PlantUML image formatting */
+footer{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:18px;
+}
+
+/* правильное масштабирование картинки */
+#umlImage{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:12px auto 0;
+  border:1px solid #e4e6eb;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+/* Печать */
+@media print{
+  body{background:#fff; color:#000}
+  header, section{background:#fff; border:1px solid #ccc; box-shadow:none}
+  nav{display:none}
+  a{color:#000; text-decoration:underline}
+  pre{background:#fff; border-color:#ccc; color:#111}
+  #umlImage{box-shadow:none}
+}
+/* Галерея изображений в конце блоков */
+.gallery {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media (min-width: 640px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 980px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+
+figure.step {
+  margin: 0;
+  border: 1px solid #e4e6eb;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+figure.step img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+figure.step figcaption {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 6px 8px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* при печати убираем сетку, оставляем по одной колонке */
+@media print {
+  .gallery { grid-template-columns: 1fr !important; }
+}
+.topnav {
+  background: #666666;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.topnav a:hover {
+  background: #e53935;
+}
+.topnav .home {
+  font-weight: bold;
+}
