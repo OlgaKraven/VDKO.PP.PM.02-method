@@ -1,0 +1,7 @@
+﻿rolname,sel,ins,upd,del,rolsuper,rolcanlogin
+client01,t,t,f,f,f,t
+client02,t,t,f,f,f,t
+client03,t,f,f,f,f,t
+client04,t,f,t,f,f,t
+client05,t,f,f,t,f,t
+

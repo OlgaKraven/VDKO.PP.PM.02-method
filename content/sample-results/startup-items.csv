@@ -1,0 +1,4 @@
+﻿"Name","Command","Location","User"
+"PM02Lab-Report","cmd.exe /c ""C:\PM02\case_00\Report.cmd""","HKU\S-1-5-21-1528048308-2400443947-1013259110-1002\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","PM02-V00\dbadmin_00"
+"PM02Lab-Reminder","cmd.exe /c ""C:\PM02\case_00\Reminder.cmd""","HKU\S-1-5-21-1528048308-2400443947-1013259110-1002\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","PM02-V00\dbadmin_00"
+"PM02Lab-Workload","cmd.exe /c ""C:\PM02\case_00\Workload.cmd""","HKU\S-1-5-21-1528048308-2400443947-1013259110-1002\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","PM02-V00\dbadmin_00"

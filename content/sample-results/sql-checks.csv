@@ -1,0 +1,43 @@
+﻿"User","Operation","Expected","Exit","Passed","Output","Error"
+"client01","SELECT","allow","0","True","current_user,count
+client01,5
+",""
+"client01","INSERT","allow","0","True","id
+6
+",""
+"client01","DELETE","deny 42501","3","True","","ERROR:  42501: permission denied for table clients
+LOCATION:  aclcheck_error, aclchk.c:2845
+"
+"client02","SELECT","allow","0","True","current_user,count
+client02,5
+",""
+"client02","INSERT","allow","0","True","id
+7
+",""
+"client02","DELETE","deny 42501","3","True","","ERROR:  42501: permission denied for table clients
+LOCATION:  aclcheck_error, aclchk.c:2845
+"
+"client03","SELECT","allow","0","True","current_user,count
+client03,5
+",""
+"client03","INSERT","deny 42501","3","True","","ERROR:  42501: permission denied for table clients
+LOCATION:  aclcheck_error, aclchk.c:2845
+"
+"client04","SELECT","allow","0","True","current_user,count
+client04,5
+",""
+"client04","UPDATE","allow","0","True","id
+1
+",""
+"client04","DELETE","deny 42501","3","True","","ERROR:  42501: permission denied for table clients
+LOCATION:  aclcheck_error, aclchk.c:2845
+"
+"client05","SELECT","allow","0","True","current_user,count
+client05,5
+",""
+"client05","DELETE","allow","0","True","id
+1
+",""
+"client05","UPDATE","deny 42501","3","True","","ERROR:  42501: permission denied for table clients
+LOCATION:  aclcheck_error, aclchk.c:2845
+"

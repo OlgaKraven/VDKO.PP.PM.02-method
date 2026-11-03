@@ -1,0 +1,1684 @@
+[
+  {
+    "variant": "00",
+    "subject": "Учебный центр «Меридиан»",
+    "context": "Рабочие места администраторов и учёт учебных клиентов",
+    "computer": "PM02-V00",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_00",
+    "port": 5540,
+    "database": "corpdata_00",
+    "os_user": "dbadmin_00",
+    "work_dir": "C:\\DBAdmin_00",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_00",
+    "scan": "SecurityScan_00",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 00-01",
+        "email": "v00-c01@example.test",
+        "reg_date": "2026-09-02"
+      },
+      {
+        "name": "Учебный клиент 00-02",
+        "email": "v00-c02@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 00-03",
+        "email": "v00-c03@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 00-04",
+        "email": "v00-c04@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 00-05",
+        "email": "v00-c05@example.test",
+        "reg_date": "2026-09-06"
+      }
+    ]
+  },
+  {
+    "variant": "01",
+    "subject": "Библиотека",
+    "context": "Каталог, читательские рабочие места и выдача книг",
+    "computer": "PM02-V01",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_01",
+    "port": 5541,
+    "database": "corpdata_01",
+    "os_user": "dbadmin_01",
+    "work_dir": "C:\\DBAdmin_01",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_01",
+    "scan": "SecurityScan_01",
+    "case": "database",
+    "clients": [
+      {
+        "name": "Учебный клиент 01-01",
+        "email": "v01-c01@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 01-02",
+        "email": "v01-c02@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 01-03",
+        "email": "v01-c03@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 01-04",
+        "email": "v01-c04@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 01-05",
+        "email": "v01-c05@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 01-06",
+        "email": "v01-c06@example.test",
+        "reg_date": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "variant": "02",
+    "subject": "Учебная часть",
+    "context": "Учебный портал, ведомости и общие документы",
+    "computer": "PM02-V02",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_02",
+    "port": 5542,
+    "database": "corpdata_02",
+    "os_user": "dbadmin_02",
+    "work_dir": "C:\\DBAdmin_02",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_02",
+    "scan": "SecurityScan_02",
+    "case": "readonly",
+    "clients": [
+      {
+        "name": "Учебный клиент 02-01",
+        "email": "v02-c01@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 02-02",
+        "email": "v02-c02@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 02-03",
+        "email": "v02-c03@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 02-04",
+        "email": "v02-c04@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 02-05",
+        "email": "v02-c05@example.test",
+        "reg_date": "2026-09-08"
+      },
+      {
+        "name": "Учебный клиент 02-06",
+        "email": "v02-c06@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 02-07",
+        "email": "v02-c07@example.test",
+        "reg_date": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "variant": "03",
+    "subject": "Компьютерный класс",
+    "context": "Учебные ПК, браузер и мультимедийные занятия",
+    "computer": "PM02-V03",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_03",
+    "port": 5543,
+    "database": "corpdata_03",
+    "os_user": "dbadmin_03",
+    "work_dir": "C:\\DBAdmin_03",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_03",
+    "scan": "SecurityScan_03",
+    "case": "data",
+    "clients": [
+      {
+        "name": "Учебный клиент 03-01",
+        "email": "v03-c01@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 03-02",
+        "email": "v03-c02@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 03-03",
+        "email": "v03-c03@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 03-04",
+        "email": "v03-c04@example.test",
+        "reg_date": "2026-09-08"
+      },
+      {
+        "name": "Учебный клиент 03-05",
+        "email": "v03-c05@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 03-06",
+        "email": "v03-c06@example.test",
+        "reg_date": "2026-09-10"
+      },
+      {
+        "name": "Учебный клиент 03-07",
+        "email": "v03-c07@example.test",
+        "reg_date": "2026-09-11"
+      },
+      {
+        "name": "Учебный клиент 03-08",
+        "email": "v03-c08@example.test",
+        "reg_date": "2026-09-12"
+      }
+    ]
+  },
+  {
+    "variant": "04",
+    "subject": "Приёмная комиссия",
+    "context": "Тестовые анкеты и документы абитуриентов",
+    "computer": "PM02-V04",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_04",
+    "port": 5544,
+    "database": "corpdata_04",
+    "os_user": "dbadmin_04",
+    "work_dir": "C:\\DBAdmin_04",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_04",
+    "scan": "SecurityScan_04",
+    "case": "startup",
+    "clients": [
+      {
+        "name": "Учебный клиент 04-01",
+        "email": "v04-c01@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 04-02",
+        "email": "v04-c02@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 04-03",
+        "email": "v04-c03@example.test",
+        "reg_date": "2026-09-08"
+      },
+      {
+        "name": "Учебный клиент 04-04",
+        "email": "v04-c04@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 04-05",
+        "email": "v04-c05@example.test",
+        "reg_date": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "variant": "05",
+    "subject": "Дистанционное обучение",
+    "context": "Учебные веб-конференции и материалы",
+    "computer": "PM02-V05",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_05",
+    "port": 5545,
+    "database": "corpdata_05",
+    "os_user": "dbadmin_05",
+    "work_dir": "C:\\DBAdmin_05",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_05",
+    "scan": "SecurityScan_05",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 05-01",
+        "email": "v05-c01@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 05-02",
+        "email": "v05-c02@example.test",
+        "reg_date": "2026-09-08"
+      },
+      {
+        "name": "Учебный клиент 05-03",
+        "email": "v05-c03@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 05-04",
+        "email": "v05-c04@example.test",
+        "reg_date": "2026-09-10"
+      },
+      {
+        "name": "Учебный клиент 05-05",
+        "email": "v05-c05@example.test",
+        "reg_date": "2026-09-11"
+      },
+      {
+        "name": "Учебный клиент 05-06",
+        "email": "v05-c06@example.test",
+        "reg_date": "2026-09-12"
+      }
+    ]
+  },
+  {
+    "variant": "06",
+    "subject": "Копировальный центр",
+    "context": "Макеты PDF и учебные задания печати",
+    "computer": "PM02-V06",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_06",
+    "port": 5546,
+    "database": "corpdata_06",
+    "os_user": "dbadmin_06",
+    "work_dir": "C:\\DBAdmin_06",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_06",
+    "scan": "SecurityScan_06",
+    "case": "database",
+    "clients": [
+      {
+        "name": "Учебный клиент 06-01",
+        "email": "v06-c01@example.test",
+        "reg_date": "2026-09-08"
+      },
+      {
+        "name": "Учебный клиент 06-02",
+        "email": "v06-c02@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 06-03",
+        "email": "v06-c03@example.test",
+        "reg_date": "2026-09-10"
+      },
+      {
+        "name": "Учебный клиент 06-04",
+        "email": "v06-c04@example.test",
+        "reg_date": "2026-09-11"
+      },
+      {
+        "name": "Учебный клиент 06-05",
+        "email": "v06-c05@example.test",
+        "reg_date": "2026-09-12"
+      },
+      {
+        "name": "Учебный клиент 06-06",
+        "email": "v06-c06@example.test",
+        "reg_date": "2026-09-13"
+      },
+      {
+        "name": "Учебный клиент 06-07",
+        "email": "v06-c07@example.test",
+        "reg_date": "2026-09-14"
+      }
+    ]
+  },
+  {
+    "variant": "07",
+    "subject": "Учебный магазин",
+    "context": "Тестовая кассовая программа и каталог товаров",
+    "computer": "PM02-V07",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_07",
+    "port": 5547,
+    "database": "corpdata_07",
+    "os_user": "dbadmin_07",
+    "work_dir": "C:\\DBAdmin_07",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_07",
+    "scan": "SecurityScan_07",
+    "case": "readonly",
+    "clients": [
+      {
+        "name": "Учебный клиент 07-01",
+        "email": "v07-c01@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 07-02",
+        "email": "v07-c02@example.test",
+        "reg_date": "2026-09-10"
+      },
+      {
+        "name": "Учебный клиент 07-03",
+        "email": "v07-c03@example.test",
+        "reg_date": "2026-09-11"
+      },
+      {
+        "name": "Учебный клиент 07-04",
+        "email": "v07-c04@example.test",
+        "reg_date": "2026-09-12"
+      },
+      {
+        "name": "Учебный клиент 07-05",
+        "email": "v07-c05@example.test",
+        "reg_date": "2026-09-13"
+      },
+      {
+        "name": "Учебный клиент 07-06",
+        "email": "v07-c06@example.test",
+        "reg_date": "2026-09-14"
+      },
+      {
+        "name": "Учебный клиент 07-07",
+        "email": "v07-c07@example.test",
+        "reg_date": "2026-09-15"
+      },
+      {
+        "name": "Учебный клиент 07-08",
+        "email": "v07-c08@example.test",
+        "reg_date": "2026-09-16"
+      }
+    ]
+  },
+  {
+    "variant": "08",
+    "subject": "Склад",
+    "context": "Учебный учёт остатков и печать этикеток",
+    "computer": "PM02-V08",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_08",
+    "port": 5548,
+    "database": "corpdata_08",
+    "os_user": "dbadmin_08",
+    "work_dir": "C:\\DBAdmin_08",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_08",
+    "scan": "SecurityScan_08",
+    "case": "data",
+    "clients": [
+      {
+        "name": "Учебный клиент 08-01",
+        "email": "v08-c01@example.test",
+        "reg_date": "2026-09-10"
+      },
+      {
+        "name": "Учебный клиент 08-02",
+        "email": "v08-c02@example.test",
+        "reg_date": "2026-09-11"
+      },
+      {
+        "name": "Учебный клиент 08-03",
+        "email": "v08-c03@example.test",
+        "reg_date": "2026-09-12"
+      },
+      {
+        "name": "Учебный клиент 08-04",
+        "email": "v08-c04@example.test",
+        "reg_date": "2026-09-13"
+      },
+      {
+        "name": "Учебный клиент 08-05",
+        "email": "v08-c05@example.test",
+        "reg_date": "2026-09-14"
+      }
+    ]
+  },
+  {
+    "variant": "09",
+    "subject": "Сервисный центр",
+    "context": "Учебная регистрация ремонта и вложений",
+    "computer": "PM02-V09",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_09",
+    "port": 5549,
+    "database": "corpdata_09",
+    "os_user": "dbadmin_09",
+    "work_dir": "C:\\DBAdmin_09",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_09",
+    "scan": "SecurityScan_09",
+    "case": "startup",
+    "clients": [
+      {
+        "name": "Учебный клиент 09-01",
+        "email": "v09-c01@example.test",
+        "reg_date": "2026-09-11"
+      },
+      {
+        "name": "Учебный клиент 09-02",
+        "email": "v09-c02@example.test",
+        "reg_date": "2026-09-12"
+      },
+      {
+        "name": "Учебный клиент 09-03",
+        "email": "v09-c03@example.test",
+        "reg_date": "2026-09-13"
+      },
+      {
+        "name": "Учебный клиент 09-04",
+        "email": "v09-c04@example.test",
+        "reg_date": "2026-09-14"
+      },
+      {
+        "name": "Учебный клиент 09-05",
+        "email": "v09-c05@example.test",
+        "reg_date": "2026-09-15"
+      },
+      {
+        "name": "Учебный клиент 09-06",
+        "email": "v09-c06@example.test",
+        "reg_date": "2026-09-16"
+      }
+    ]
+  },
+  {
+    "variant": "10",
+    "subject": "Центр обслуживания посетителей",
+    "context": "Учебный терминал и запись на приём",
+    "computer": "PM02-V10",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_10",
+    "port": 5550,
+    "database": "corpdata_10",
+    "os_user": "dbadmin_10",
+    "work_dir": "C:\\DBAdmin_10",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_10",
+    "scan": "SecurityScan_10",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 10-01",
+        "email": "v10-c01@example.test",
+        "reg_date": "2026-09-12"
+      },
+      {
+        "name": "Учебный клиент 10-02",
+        "email": "v10-c02@example.test",
+        "reg_date": "2026-09-13"
+      },
+      {
+        "name": "Учебный клиент 10-03",
+        "email": "v10-c03@example.test",
+        "reg_date": "2026-09-14"
+      },
+      {
+        "name": "Учебный клиент 10-04",
+        "email": "v10-c04@example.test",
+        "reg_date": "2026-09-15"
+      },
+      {
+        "name": "Учебный клиент 10-05",
+        "email": "v10-c05@example.test",
+        "reg_date": "2026-09-16"
+      },
+      {
+        "name": "Учебный клиент 10-06",
+        "email": "v10-c06@example.test",
+        "reg_date": "2026-09-17"
+      },
+      {
+        "name": "Учебный клиент 10-07",
+        "email": "v10-c07@example.test",
+        "reg_date": "2026-09-18"
+      }
+    ]
+  },
+  {
+    "variant": "11",
+    "subject": "Билетная касса",
+    "context": "Учебные бронирования и электронные билеты",
+    "computer": "PM02-V11",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_11",
+    "port": 5551,
+    "database": "corpdata_11",
+    "os_user": "dbadmin_11",
+    "work_dir": "C:\\DBAdmin_11",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_11",
+    "scan": "SecurityScan_11",
+    "case": "database",
+    "clients": [
+      {
+        "name": "Учебный клиент 11-01",
+        "email": "v11-c01@example.test",
+        "reg_date": "2026-09-13"
+      },
+      {
+        "name": "Учебный клиент 11-02",
+        "email": "v11-c02@example.test",
+        "reg_date": "2026-09-14"
+      },
+      {
+        "name": "Учебный клиент 11-03",
+        "email": "v11-c03@example.test",
+        "reg_date": "2026-09-15"
+      },
+      {
+        "name": "Учебный клиент 11-04",
+        "email": "v11-c04@example.test",
+        "reg_date": "2026-09-16"
+      },
+      {
+        "name": "Учебный клиент 11-05",
+        "email": "v11-c05@example.test",
+        "reg_date": "2026-09-17"
+      },
+      {
+        "name": "Учебный клиент 11-06",
+        "email": "v11-c06@example.test",
+        "reg_date": "2026-09-18"
+      },
+      {
+        "name": "Учебный клиент 11-07",
+        "email": "v11-c07@example.test",
+        "reg_date": "2026-09-19"
+      },
+      {
+        "name": "Учебный клиент 11-08",
+        "email": "v11-c08@example.test",
+        "reg_date": "2026-09-20"
+      }
+    ]
+  },
+  {
+    "variant": "12",
+    "subject": "Гостиница",
+    "context": "Учебные бронирования и рабочее место администратора",
+    "computer": "PM02-V12",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_12",
+    "port": 5552,
+    "database": "corpdata_12",
+    "os_user": "dbadmin_12",
+    "work_dir": "C:\\DBAdmin_12",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_12",
+    "scan": "SecurityScan_12",
+    "case": "readonly",
+    "clients": [
+      {
+        "name": "Учебный клиент 12-01",
+        "email": "v12-c01@example.test",
+        "reg_date": "2026-09-14"
+      },
+      {
+        "name": "Учебный клиент 12-02",
+        "email": "v12-c02@example.test",
+        "reg_date": "2026-09-15"
+      },
+      {
+        "name": "Учебный клиент 12-03",
+        "email": "v12-c03@example.test",
+        "reg_date": "2026-09-16"
+      },
+      {
+        "name": "Учебный клиент 12-04",
+        "email": "v12-c04@example.test",
+        "reg_date": "2026-09-17"
+      },
+      {
+        "name": "Учебный клиент 12-05",
+        "email": "v12-c05@example.test",
+        "reg_date": "2026-09-18"
+      }
+    ]
+  },
+  {
+    "variant": "13",
+    "subject": "Регистратура учебной клиники",
+    "context": "Тестовая запись на приём без медицинских сведений",
+    "computer": "PM02-V13",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_13",
+    "port": 5553,
+    "database": "corpdata_13",
+    "os_user": "dbadmin_13",
+    "work_dir": "C:\\DBAdmin_13",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_13",
+    "scan": "SecurityScan_13",
+    "case": "data",
+    "clients": [
+      {
+        "name": "Учебный клиент 13-01",
+        "email": "v13-c01@example.test",
+        "reg_date": "2026-09-15"
+      },
+      {
+        "name": "Учебный клиент 13-02",
+        "email": "v13-c02@example.test",
+        "reg_date": "2026-09-16"
+      },
+      {
+        "name": "Учебный клиент 13-03",
+        "email": "v13-c03@example.test",
+        "reg_date": "2026-09-17"
+      },
+      {
+        "name": "Учебный клиент 13-04",
+        "email": "v13-c04@example.test",
+        "reg_date": "2026-09-18"
+      },
+      {
+        "name": "Учебный клиент 13-05",
+        "email": "v13-c05@example.test",
+        "reg_date": "2026-09-19"
+      },
+      {
+        "name": "Учебный клиент 13-06",
+        "email": "v13-c06@example.test",
+        "reg_date": "2026-09-20"
+      }
+    ]
+  },
+  {
+    "variant": "14",
+    "subject": "Учебный аптечный склад",
+    "context": "Тестовый каталог и этикетки без консультаций по лечению",
+    "computer": "PM02-V14",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_14",
+    "port": 5554,
+    "database": "corpdata_14",
+    "os_user": "dbadmin_14",
+    "work_dir": "C:\\DBAdmin_14",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_14",
+    "scan": "SecurityScan_14",
+    "case": "startup",
+    "clients": [
+      {
+        "name": "Учебный клиент 14-01",
+        "email": "v14-c01@example.test",
+        "reg_date": "2026-09-16"
+      },
+      {
+        "name": "Учебный клиент 14-02",
+        "email": "v14-c02@example.test",
+        "reg_date": "2026-09-17"
+      },
+      {
+        "name": "Учебный клиент 14-03",
+        "email": "v14-c03@example.test",
+        "reg_date": "2026-09-18"
+      },
+      {
+        "name": "Учебный клиент 14-04",
+        "email": "v14-c04@example.test",
+        "reg_date": "2026-09-19"
+      },
+      {
+        "name": "Учебный клиент 14-05",
+        "email": "v14-c05@example.test",
+        "reg_date": "2026-09-20"
+      },
+      {
+        "name": "Учебный клиент 14-06",
+        "email": "v14-c06@example.test",
+        "reg_date": "2026-09-21"
+      },
+      {
+        "name": "Учебный клиент 14-07",
+        "email": "v14-c07@example.test",
+        "reg_date": "2026-09-22"
+      }
+    ]
+  },
+  {
+    "variant": "15",
+    "subject": "Столовая",
+    "context": "Учебное меню и терминал заказов",
+    "computer": "PM02-V15",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_15",
+    "port": 5555,
+    "database": "corpdata_15",
+    "os_user": "dbadmin_15",
+    "work_dir": "C:\\DBAdmin_15",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_15",
+    "scan": "SecurityScan_15",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 15-01",
+        "email": "v15-c01@example.test",
+        "reg_date": "2026-09-17"
+      },
+      {
+        "name": "Учебный клиент 15-02",
+        "email": "v15-c02@example.test",
+        "reg_date": "2026-09-18"
+      },
+      {
+        "name": "Учебный клиент 15-03",
+        "email": "v15-c03@example.test",
+        "reg_date": "2026-09-19"
+      },
+      {
+        "name": "Учебный клиент 15-04",
+        "email": "v15-c04@example.test",
+        "reg_date": "2026-09-20"
+      },
+      {
+        "name": "Учебный клиент 15-05",
+        "email": "v15-c05@example.test",
+        "reg_date": "2026-09-21"
+      },
+      {
+        "name": "Учебный клиент 15-06",
+        "email": "v15-c06@example.test",
+        "reg_date": "2026-09-22"
+      },
+      {
+        "name": "Учебный клиент 15-07",
+        "email": "v15-c07@example.test",
+        "reg_date": "2026-09-23"
+      },
+      {
+        "name": "Учебный клиент 15-08",
+        "email": "v15-c08@example.test",
+        "reg_date": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "variant": "16",
+    "subject": "Служба доставки",
+    "context": "Тестовые маршруты и статусы отправлений",
+    "computer": "PM02-V16",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_16",
+    "port": 5556,
+    "database": "corpdata_16",
+    "os_user": "dbadmin_16",
+    "work_dir": "C:\\DBAdmin_16",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_16",
+    "scan": "SecurityScan_16",
+    "case": "database",
+    "clients": [
+      {
+        "name": "Учебный клиент 16-01",
+        "email": "v16-c01@example.test",
+        "reg_date": "2026-09-18"
+      },
+      {
+        "name": "Учебный клиент 16-02",
+        "email": "v16-c02@example.test",
+        "reg_date": "2026-09-19"
+      },
+      {
+        "name": "Учебный клиент 16-03",
+        "email": "v16-c03@example.test",
+        "reg_date": "2026-09-20"
+      },
+      {
+        "name": "Учебный клиент 16-04",
+        "email": "v16-c04@example.test",
+        "reg_date": "2026-09-21"
+      },
+      {
+        "name": "Учебный клиент 16-05",
+        "email": "v16-c05@example.test",
+        "reg_date": "2026-09-22"
+      }
+    ]
+  },
+  {
+    "variant": "17",
+    "subject": "Дизайн-студия",
+    "context": "Учебные макеты и совместная работа",
+    "computer": "PM02-V17",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_17",
+    "port": 5557,
+    "database": "corpdata_17",
+    "os_user": "dbadmin_17",
+    "work_dir": "C:\\DBAdmin_17",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_17",
+    "scan": "SecurityScan_17",
+    "case": "readonly",
+    "clients": [
+      {
+        "name": "Учебный клиент 17-01",
+        "email": "v17-c01@example.test",
+        "reg_date": "2026-09-19"
+      },
+      {
+        "name": "Учебный клиент 17-02",
+        "email": "v17-c02@example.test",
+        "reg_date": "2026-09-20"
+      },
+      {
+        "name": "Учебный клиент 17-03",
+        "email": "v17-c03@example.test",
+        "reg_date": "2026-09-21"
+      },
+      {
+        "name": "Учебный клиент 17-04",
+        "email": "v17-c04@example.test",
+        "reg_date": "2026-09-22"
+      },
+      {
+        "name": "Учебный клиент 17-05",
+        "email": "v17-c05@example.test",
+        "reg_date": "2026-09-23"
+      },
+      {
+        "name": "Учебный клиент 17-06",
+        "email": "v17-c06@example.test",
+        "reg_date": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "variant": "18",
+    "subject": "Редакция",
+    "context": "Учебные тексты и согласование документов",
+    "computer": "PM02-V18",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_18",
+    "port": 5558,
+    "database": "corpdata_18",
+    "os_user": "dbadmin_18",
+    "work_dir": "C:\\DBAdmin_18",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_18",
+    "scan": "SecurityScan_18",
+    "case": "data",
+    "clients": [
+      {
+        "name": "Учебный клиент 18-01",
+        "email": "v18-c01@example.test",
+        "reg_date": "2026-09-20"
+      },
+      {
+        "name": "Учебный клиент 18-02",
+        "email": "v18-c02@example.test",
+        "reg_date": "2026-09-21"
+      },
+      {
+        "name": "Учебный клиент 18-03",
+        "email": "v18-c03@example.test",
+        "reg_date": "2026-09-22"
+      },
+      {
+        "name": "Учебный клиент 18-04",
+        "email": "v18-c04@example.test",
+        "reg_date": "2026-09-23"
+      },
+      {
+        "name": "Учебный клиент 18-05",
+        "email": "v18-c05@example.test",
+        "reg_date": "2026-09-24"
+      },
+      {
+        "name": "Учебный клиент 18-06",
+        "email": "v18-c06@example.test",
+        "reg_date": "2026-09-25"
+      },
+      {
+        "name": "Учебный клиент 18-07",
+        "email": "v18-c07@example.test",
+        "reg_date": "2026-09-26"
+      }
+    ]
+  },
+  {
+    "variant": "19",
+    "subject": "Музей",
+    "context": "Учебный каталог экспонатов и QR-материалы",
+    "computer": "PM02-V19",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_19",
+    "port": 5559,
+    "database": "corpdata_19",
+    "os_user": "dbadmin_19",
+    "work_dir": "C:\\DBAdmin_19",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_19",
+    "scan": "SecurityScan_19",
+    "case": "startup",
+    "clients": [
+      {
+        "name": "Учебный клиент 19-01",
+        "email": "v19-c01@example.test",
+        "reg_date": "2026-09-21"
+      },
+      {
+        "name": "Учебный клиент 19-02",
+        "email": "v19-c02@example.test",
+        "reg_date": "2026-09-22"
+      },
+      {
+        "name": "Учебный клиент 19-03",
+        "email": "v19-c03@example.test",
+        "reg_date": "2026-09-23"
+      },
+      {
+        "name": "Учебный клиент 19-04",
+        "email": "v19-c04@example.test",
+        "reg_date": "2026-09-24"
+      },
+      {
+        "name": "Учебный клиент 19-05",
+        "email": "v19-c05@example.test",
+        "reg_date": "2026-09-25"
+      },
+      {
+        "name": "Учебный клиент 19-06",
+        "email": "v19-c06@example.test",
+        "reg_date": "2026-09-26"
+      },
+      {
+        "name": "Учебный клиент 19-07",
+        "email": "v19-c07@example.test",
+        "reg_date": "2026-09-27"
+      },
+      {
+        "name": "Учебный клиент 19-08",
+        "email": "v19-c08@example.test",
+        "reg_date": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "variant": "20",
+    "subject": "Выставочный центр",
+    "context": "Учебная регистрация посетителей и бейджи",
+    "computer": "PM02-V20",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_20",
+    "port": 5560,
+    "database": "corpdata_20",
+    "os_user": "dbadmin_20",
+    "work_dir": "C:\\DBAdmin_20",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_20",
+    "scan": "SecurityScan_20",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 20-01",
+        "email": "v20-c01@example.test",
+        "reg_date": "2026-09-22"
+      },
+      {
+        "name": "Учебный клиент 20-02",
+        "email": "v20-c02@example.test",
+        "reg_date": "2026-09-23"
+      },
+      {
+        "name": "Учебный клиент 20-03",
+        "email": "v20-c03@example.test",
+        "reg_date": "2026-09-24"
+      },
+      {
+        "name": "Учебный клиент 20-04",
+        "email": "v20-c04@example.test",
+        "reg_date": "2026-09-25"
+      },
+      {
+        "name": "Учебный клиент 20-05",
+        "email": "v20-c05@example.test",
+        "reg_date": "2026-09-26"
+      }
+    ]
+  },
+  {
+    "variant": "21",
+    "subject": "Спортивный клуб",
+    "context": "Учебные абонементы и рабочее место администратора",
+    "computer": "PM02-V21",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_21",
+    "port": 5561,
+    "database": "corpdata_21",
+    "os_user": "dbadmin_21",
+    "work_dir": "C:\\DBAdmin_21",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_21",
+    "scan": "SecurityScan_21",
+    "case": "database",
+    "clients": [
+      {
+        "name": "Учебный клиент 21-01",
+        "email": "v21-c01@example.test",
+        "reg_date": "2026-09-23"
+      },
+      {
+        "name": "Учебный клиент 21-02",
+        "email": "v21-c02@example.test",
+        "reg_date": "2026-09-24"
+      },
+      {
+        "name": "Учебный клиент 21-03",
+        "email": "v21-c03@example.test",
+        "reg_date": "2026-09-25"
+      },
+      {
+        "name": "Учебный клиент 21-04",
+        "email": "v21-c04@example.test",
+        "reg_date": "2026-09-26"
+      },
+      {
+        "name": "Учебный клиент 21-05",
+        "email": "v21-c05@example.test",
+        "reg_date": "2026-09-27"
+      },
+      {
+        "name": "Учебный клиент 21-06",
+        "email": "v21-c06@example.test",
+        "reg_date": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "variant": "22",
+    "subject": "Салон услуг",
+    "context": "Учебный журнал записи и уведомления",
+    "computer": "PM02-V22",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_22",
+    "port": 5562,
+    "database": "corpdata_22",
+    "os_user": "dbadmin_22",
+    "work_dir": "C:\\DBAdmin_22",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_22",
+    "scan": "SecurityScan_22",
+    "case": "readonly",
+    "clients": [
+      {
+        "name": "Учебный клиент 22-01",
+        "email": "v22-c01@example.test",
+        "reg_date": "2026-09-24"
+      },
+      {
+        "name": "Учебный клиент 22-02",
+        "email": "v22-c02@example.test",
+        "reg_date": "2026-09-25"
+      },
+      {
+        "name": "Учебный клиент 22-03",
+        "email": "v22-c03@example.test",
+        "reg_date": "2026-09-26"
+      },
+      {
+        "name": "Учебный клиент 22-04",
+        "email": "v22-c04@example.test",
+        "reg_date": "2026-09-27"
+      },
+      {
+        "name": "Учебный клиент 22-05",
+        "email": "v22-c05@example.test",
+        "reg_date": "2026-09-28"
+      },
+      {
+        "name": "Учебный клиент 22-06",
+        "email": "v22-c06@example.test",
+        "reg_date": "2026-09-01"
+      },
+      {
+        "name": "Учебный клиент 22-07",
+        "email": "v22-c07@example.test",
+        "reg_date": "2026-09-02"
+      }
+    ]
+  },
+  {
+    "variant": "23",
+    "subject": "Автомастерская",
+    "context": "Учебные заказ-наряды и фотографии",
+    "computer": "PM02-V23",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_23",
+    "port": 5563,
+    "database": "corpdata_23",
+    "os_user": "dbadmin_23",
+    "work_dir": "C:\\DBAdmin_23",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_23",
+    "scan": "SecurityScan_23",
+    "case": "data",
+    "clients": [
+      {
+        "name": "Учебный клиент 23-01",
+        "email": "v23-c01@example.test",
+        "reg_date": "2026-09-25"
+      },
+      {
+        "name": "Учебный клиент 23-02",
+        "email": "v23-c02@example.test",
+        "reg_date": "2026-09-26"
+      },
+      {
+        "name": "Учебный клиент 23-03",
+        "email": "v23-c03@example.test",
+        "reg_date": "2026-09-27"
+      },
+      {
+        "name": "Учебный клиент 23-04",
+        "email": "v23-c04@example.test",
+        "reg_date": "2026-09-28"
+      },
+      {
+        "name": "Учебный клиент 23-05",
+        "email": "v23-c05@example.test",
+        "reg_date": "2026-09-01"
+      },
+      {
+        "name": "Учебный клиент 23-06",
+        "email": "v23-c06@example.test",
+        "reg_date": "2026-09-02"
+      },
+      {
+        "name": "Учебный клиент 23-07",
+        "email": "v23-c07@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 23-08",
+        "email": "v23-c08@example.test",
+        "reg_date": "2026-09-04"
+      }
+    ]
+  },
+  {
+    "variant": "24",
+    "subject": "Строительное бюро",
+    "context": "Учебные документы проекта и архивы",
+    "computer": "PM02-V24",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_24",
+    "port": 5564,
+    "database": "corpdata_24",
+    "os_user": "dbadmin_24",
+    "work_dir": "C:\\DBAdmin_24",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_24",
+    "scan": "SecurityScan_24",
+    "case": "startup",
+    "clients": [
+      {
+        "name": "Учебный клиент 24-01",
+        "email": "v24-c01@example.test",
+        "reg_date": "2026-09-26"
+      },
+      {
+        "name": "Учебный клиент 24-02",
+        "email": "v24-c02@example.test",
+        "reg_date": "2026-09-27"
+      },
+      {
+        "name": "Учебный клиент 24-03",
+        "email": "v24-c03@example.test",
+        "reg_date": "2026-09-28"
+      },
+      {
+        "name": "Учебный клиент 24-04",
+        "email": "v24-c04@example.test",
+        "reg_date": "2026-09-01"
+      },
+      {
+        "name": "Учебный клиент 24-05",
+        "email": "v24-c05@example.test",
+        "reg_date": "2026-09-02"
+      }
+    ]
+  },
+  {
+    "variant": "25",
+    "subject": "Центр аренды оборудования",
+    "context": "Тестовая выдача устройств и инструкции",
+    "computer": "PM02-V25",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_25",
+    "port": 5565,
+    "database": "corpdata_25",
+    "os_user": "dbadmin_25",
+    "work_dir": "C:\\DBAdmin_25",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_25",
+    "scan": "SecurityScan_25",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 25-01",
+        "email": "v25-c01@example.test",
+        "reg_date": "2026-09-27"
+      },
+      {
+        "name": "Учебный клиент 25-02",
+        "email": "v25-c02@example.test",
+        "reg_date": "2026-09-28"
+      },
+      {
+        "name": "Учебный клиент 25-03",
+        "email": "v25-c03@example.test",
+        "reg_date": "2026-09-01"
+      },
+      {
+        "name": "Учебный клиент 25-04",
+        "email": "v25-c04@example.test",
+        "reg_date": "2026-09-02"
+      },
+      {
+        "name": "Учебный клиент 25-05",
+        "email": "v25-c05@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 25-06",
+        "email": "v25-c06@example.test",
+        "reg_date": "2026-09-04"
+      }
+    ]
+  },
+  {
+    "variant": "26",
+    "subject": "Фотоцентр",
+    "context": "Учебные изображения и печать",
+    "computer": "PM02-V26",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_26",
+    "port": 5566,
+    "database": "corpdata_26",
+    "os_user": "dbadmin_26",
+    "work_dir": "C:\\DBAdmin_26",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_26",
+    "scan": "SecurityScan_26",
+    "case": "database",
+    "clients": [
+      {
+        "name": "Учебный клиент 26-01",
+        "email": "v26-c01@example.test",
+        "reg_date": "2026-09-28"
+      },
+      {
+        "name": "Учебный клиент 26-02",
+        "email": "v26-c02@example.test",
+        "reg_date": "2026-09-01"
+      },
+      {
+        "name": "Учебный клиент 26-03",
+        "email": "v26-c03@example.test",
+        "reg_date": "2026-09-02"
+      },
+      {
+        "name": "Учебный клиент 26-04",
+        "email": "v26-c04@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 26-05",
+        "email": "v26-c05@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 26-06",
+        "email": "v26-c06@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 26-07",
+        "email": "v26-c07@example.test",
+        "reg_date": "2026-09-06"
+      }
+    ]
+  },
+  {
+    "variant": "27",
+    "subject": "Юридическое бюро",
+    "context": "Учебные шаблоны документов без юридических консультаций",
+    "computer": "PM02-V27",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_27",
+    "port": 5567,
+    "database": "corpdata_27",
+    "os_user": "dbadmin_27",
+    "work_dir": "C:\\DBAdmin_27",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_27",
+    "scan": "SecurityScan_27",
+    "case": "readonly",
+    "clients": [
+      {
+        "name": "Учебный клиент 27-01",
+        "email": "v27-c01@example.test",
+        "reg_date": "2026-09-01"
+      },
+      {
+        "name": "Учебный клиент 27-02",
+        "email": "v27-c02@example.test",
+        "reg_date": "2026-09-02"
+      },
+      {
+        "name": "Учебный клиент 27-03",
+        "email": "v27-c03@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 27-04",
+        "email": "v27-c04@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 27-05",
+        "email": "v27-c05@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 27-06",
+        "email": "v27-c06@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 27-07",
+        "email": "v27-c07@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 27-08",
+        "email": "v27-c08@example.test",
+        "reg_date": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "variant": "28",
+    "subject": "Экологическая лаборатория",
+    "context": "Учебные журналы и обезличенные измерения",
+    "computer": "PM02-V28",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_28",
+    "port": 5568,
+    "database": "corpdata_28",
+    "os_user": "dbadmin_28",
+    "work_dir": "C:\\DBAdmin_28",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_28",
+    "scan": "SecurityScan_28",
+    "case": "data",
+    "clients": [
+      {
+        "name": "Учебный клиент 28-01",
+        "email": "v28-c01@example.test",
+        "reg_date": "2026-09-02"
+      },
+      {
+        "name": "Учебный клиент 28-02",
+        "email": "v28-c02@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 28-03",
+        "email": "v28-c03@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 28-04",
+        "email": "v28-c04@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 28-05",
+        "email": "v28-c05@example.test",
+        "reg_date": "2026-09-06"
+      }
+    ]
+  },
+  {
+    "variant": "29",
+    "subject": "Волонтёрский центр",
+    "context": "Тестовые анкеты и расписания мероприятий",
+    "computer": "PM02-V29",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_29",
+    "port": 5569,
+    "database": "corpdata_29",
+    "os_user": "dbadmin_29",
+    "work_dir": "C:\\DBAdmin_29",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_29",
+    "scan": "SecurityScan_29",
+    "case": "startup",
+    "clients": [
+      {
+        "name": "Учебный клиент 29-01",
+        "email": "v29-c01@example.test",
+        "reg_date": "2026-09-03"
+      },
+      {
+        "name": "Учебный клиент 29-02",
+        "email": "v29-c02@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 29-03",
+        "email": "v29-c03@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 29-04",
+        "email": "v29-c04@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 29-05",
+        "email": "v29-c05@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 29-06",
+        "email": "v29-c06@example.test",
+        "reg_date": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "variant": "30",
+    "subject": "Коворкинг",
+    "context": "Учебные бронирования, сеть и общая печать",
+    "computer": "PM02-V30",
+    "vm_cpu": 4,
+    "vm_memory_mb": 6144,
+    "vm_disk_gb": 80,
+    "recovery_disk_gb": 1,
+    "os": "Windows 11 x64",
+    "server": "lab_sql_30",
+    "port": 5570,
+    "database": "corpdata_30",
+    "os_user": "dbadmin_30",
+    "work_dir": "C:\\DBAdmin_30",
+    "db_home": "C:\\Program Files\\PostgreSQL\\17",
+    "reports": "sql_reports_30",
+    "scan": "SecurityScan_30",
+    "case": "port",
+    "clients": [
+      {
+        "name": "Учебный клиент 30-01",
+        "email": "v30-c01@example.test",
+        "reg_date": "2026-09-04"
+      },
+      {
+        "name": "Учебный клиент 30-02",
+        "email": "v30-c02@example.test",
+        "reg_date": "2026-09-05"
+      },
+      {
+        "name": "Учебный клиент 30-03",
+        "email": "v30-c03@example.test",
+        "reg_date": "2026-09-06"
+      },
+      {
+        "name": "Учебный клиент 30-04",
+        "email": "v30-c04@example.test",
+        "reg_date": "2026-09-07"
+      },
+      {
+        "name": "Учебный клиент 30-05",
+        "email": "v30-c05@example.test",
+        "reg_date": "2026-09-08"
+      },
+      {
+        "name": "Учебный клиент 30-06",
+        "email": "v30-c06@example.test",
+        "reg_date": "2026-09-09"
+      },
+      {
+        "name": "Учебный клиент 30-07",
+        "email": "v30-c07@example.test",
+        "reg_date": "2026-09-10"
+      }
+    ]
+  }
+]

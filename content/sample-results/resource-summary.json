@@ -1,0 +1,41 @@
+﻿[
+    {
+        "Phase":  "before",
+        "Samples":  14,
+        "Start":  "2026-11-03T16:55:04.4411985+03:00",
+        "End":  "2026-11-03T16:55:52.5466716+03:00",
+        "CpuMin":  5,
+        "CpuMax":  25,
+        "CpuAverage":  14.642857142857142,
+        "MemoryAvailableMinMB":  3140,
+        "DiskReadMaxBytesSec":  0,
+        "DiskWriteMaxBytesSec":  61709,
+        "NetworkMaxBytesSec":  1863
+    },
+    {
+        "Phase":  "during",
+        "Samples":  16,
+        "Start":  "2026-11-03T16:55:56.7703083+03:00",
+        "End":  "2026-11-03T16:56:53.1409031+03:00",
+        "CpuMin":  28,
+        "CpuMax":  66,
+        "CpuAverage":  39.75,
+        "MemoryAvailableMinMB":  3012,
+        "DiskReadMaxBytesSec":  13746935,
+        "DiskWriteMaxBytesSec":  2739836,
+        "NetworkMaxBytesSec":  572
+    },
+    {
+        "Phase":  "after",
+        "Samples":  17,
+        "Start":  "2026-11-03T16:56:56.7846455+03:00",
+        "End":  "2026-11-03T16:57:55.7554979+03:00",
+        "CpuMin":  6,
+        "CpuMax":  40,
+        "CpuAverage":  18.647058823529413,
+        "MemoryAvailableMinMB":  3347,
+        "DiskReadMaxBytesSec":  2646393,
+        "DiskWriteMaxBytesSec":  169246,
+        "NetworkMaxBytesSec":  604
+    }
+]
