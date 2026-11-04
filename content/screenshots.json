@@ -10,6 +10,31 @@
     "caption": "Сводка перед установкой: каталог PostgreSQL 17, данные, порт 5540 и имя службы"
   },
   {
+    "after": "Зарегистрировать lab_sql_00 в pgAdmin",
+    "file": "register-fields.png",
+    "caption": "Вкладка General регистрации pgAdmin: в поле Name ввести lab_sql_00; пустое имя отмечается проверкой формы"
+  },
+  {
+    "after": "Зарегистрировать lab_sql_00 в pgAdmin",
+    "file": "register-connection.png",
+    "caption": "Вкладка Connection до заполнения: указать 127.0.0.1, порт 5540 вместо стандартного 5432, postgres и локальный пароль"
+  },
+  {
+    "after": "Подготовить JDBC-драйвер и проверить подключение",
+    "file": "dbeaver-libraries.png",
+    "caption": "Libraries перед автономной настройкой: красные отсутствующие сетевые библиотеки; для выбранного пути используются локальный JAR и org.postgresql.Driver"
+  },
+  {
+    "after": "Подготовить JDBC-драйвер и проверить подключение",
+    "file": "dbeaver-file-select.png",
+    "caption": "Окно Add File: в поле File name указать подготовленный путь к postgresql-42.7.8.jar и нажать Open"
+  },
+  {
+    "after": "Подготовить JDBC-драйвер и проверить подключение",
+    "file": "dbeaver-class.png",
+    "caption": "После выбора локального JAR поиск Find Class предлагает org.postgresql.Driver; сохранить настройку кнопкой OK"
+  },
+  {
     "after": "Подготовить JDBC-драйвер и проверить подключение",
     "file": "dbeaver-connected.png",
     "caption": "Подключение DBeaver к PostgreSQL 17.11 через локальный JDBC-драйвер 42.7.8"

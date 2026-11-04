@@ -36,10 +36,11 @@ def nav(prefix=''):
         ('guide.html','Методические рекомендации'),('reference.html','Диагностические случаи')])+'</nav>'
 
 def shell(title, body, subtitle='', prefix='', pdf=None):
+    kind='subject-area' if prefix=='../' or title=='Предметные области' else 'method'
     download=f'<a class="button" href="{prefix}downloads/{pdf}">Скачать PDF</a>' if pdf else ''
     return f'''<!doctype html><html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} · ПМ.02</title><link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{prefix}styles.css"></head><body>
+<link rel="stylesheet" href="{prefix}styles.css"></head><body class="{kind}">
 <a class="skip" href="#content">Перейти к содержанию</a>{nav(prefix)}
 <header class="masthead"><div class="page"><p class="eyebrow">Учебная практика ПМ.02</p>
 <h1>{escape(title)}</h1>{f'<p>{escape(subtitle)}</p>' if subtitle else ''}{download}</div></header>
@@ -166,7 +167,7 @@ def area_body(p,prefix='../'):
         '<p><strong>Проверить:</strong> события ОС и учебные PM02Lab различены; сканирование действительно завершено после нового запуска.</p>')
     html+=route_card('5',title,f'<p>{escape(desc)}</p><p>Использовать client-connection.json и clients.csv этой области. Способ проверки раскрыт в <a href="{prefix}reference.html#cases">индивидуальных случаях</a>.</p>',
         '<p><strong>Сохранить:</strong> исходное состояние, ожидание, фактический результат, обоснованное действие и проверку после изменения.</p>')
-    html+=route_card('6','Подготовить отчёты и сохранить результат',f'<p>Представить два отчёта, clients_{xy}.sql, заполненные протоколы и собственные снимки по <a href="{prefix}guide.html#submission">порядку сдачи</a>. Восстановление файлов выполнить отдельно, если назначено.</p>',
+    html+=route_card('6','Подготовить отчёт и сохранить результат',f'<p>Представить «Отчет о выполнении.docx» с блоками СУБД/ОС и диагностики, clients_{xy}.sql, заполненные протоколы и собственные снимки по <a href="{prefix}guide.html#submission">порядку сдачи</a>. Восстановление файлов выполнить отдельно, если назначено.</p>',
         f'<p><strong>Проверить:</strong> область {xy}, собственные данные и ссылка на репозиторий согласованы. Пароли и диски ВМ в сдачу не включены.</p>')
     return html
 
@@ -182,7 +183,7 @@ def build():
     profiles=[profile(a) for a in AREAS]
     demo=profile({'variant':'00','subject':'Учебный центр «Меридиан»','context':'Рабочие места администраторов и учёт учебных клиентов'})
     for p in [demo]+profiles: pack(p)
-    for source,out,pdf in [('assignment.md','index.html','assignment.pdf'),('method.md','guide.html','guide.pdf'),('reference.md','reference.html',None)]:
+    for source,out,pdf in [('assignment.md','index.html','assignment.pdf'),('method.md','guide.html','assignment.pdf'),('reference.md','reference.html',None)]:
         title,body=render_document(source)
         if source=='assignment.md': body+='<div class="next"><a class="button dark" href="files.html">Далее: файлы для работы</a></div>'
         write(out,shell(title,body,subtitle=course_title if source=='method.md' else '',pdf=pdf))
@@ -199,15 +200,15 @@ def build():
     write('guide-print.html',shell('Методические рекомендации',book,subtitle=course_title))
     write('index.htm',(ROOT/'index.html').read_text(encoding='utf-8'))
     cards=''.join(f'<a class="area-link" href="areas/{p["variant"]}.html"><span>{p["variant"]}</span><strong>{escape(p["subject"])}</strong></a>' for p in profiles)
-    write('areas.html',shell('Предметные области',f'<div class="area-list">{cards}</div>',pdf='subject-areas.pdf'))
+    write('areas.html',shell('Предметные области',f'<div class="area-list">{cards}</div>',pdf='guide.pdf'))
     for p in [demo]+profiles:
         write('areas/'+p['variant']+'.html',shell(p['subject'],area_body(p),subtitle='Область '+p['variant'],prefix='../'))
     area_index='<nav class="area-index" aria-label="Предметные области">'+''.join(f'<a href="#area-{p["variant"]}">{p["variant"]}. {escape(p["subject"])}</a>' for p in profiles)+'</nav>'
     all_areas=area_index+''.join(f'<article class="area-print" id="area-{p["variant"]}"><h2>Область {p["variant"]}. {escape(p["subject"])}</h2>'+area_body(p,prefix='')+'</article>' for p in profiles)
     write('areas-print.html',shell('Предметные области',all_areas))
     links=''.join(f'<li><a href="downloads/pm02-v{p["variant"]}.zip">{p["variant"]}. {escape(p["subject"])}</a></li>' for p in profiles)
-    files=route_card('1','Получить комплект собственной области',f'<p>Выбрать тот же номер, что назначен в ПМ.01. Архив содержит паспорт, исходные записи, профиль клиента, сценарии подготовки учебного случая, контрольные файлы восстановления и пустые протоколы.</p><ul class="file-list">{links}</ul>', '<p><strong>Использование:</strong> распаковать в своей ВМ перед установкой и настройкой. Это входные данные, а не готовые отчёты.</p>')
-    files+=route_card('2','Открыть образец и формы протоколов','<p><a href="downloads/pm02-v00.zip">Комплект образца «Меридиан»</a> показывает способ выполнения. <a href="areas/00.html">Паспорт образца</a> содержит его контрольные записи.</p><p>Папка checks в каждом архиве содержит пустые CSV-формы. Их можно открыть в табличном редакторе; результаты вносятся по собственным действиям. Полный состав двух отчётов задан в общем задании и разобран в конце методики.</p>', '<p><strong>Различить:</strong> паспорт и CSV — исходные данные; образец — объяснение; checks — заготовки; собственные отчёты — сдача.</p>')
+    files=route_card('1','Получить комплект собственной области',f'<p>Выбрать назначенный номер из списка этой практики. Архив содержит паспорт, исходные записи, профиль клиента, сценарии подготовки учебного случая, контрольные файлы восстановления и пустые протоколы.</p><ul class="file-list">{links}</ul>', '<p><strong>Использование:</strong> распаковать в своей ВМ перед установкой и настройкой. Это входные данные, а не готовые отчёты.</p>')
+    files+=route_card('2','Открыть образец и формы протоколов','<p><a href="downloads/pm02-v00.zip">Учебный тестовый комплект образца «Меридиан»</a> показывает способ выполнения. <a href="areas/00.html">Паспорт образца</a> содержит его контрольные записи.</p><p>Папка checks в каждом архиве содержит пустые CSV-формы. Их можно открыть в табличном редакторе; результаты вносятся по собственным действиям. Чистая <a href="downloads/Отчет%20о%20выполнении.docx">форма «Отчет о выполнении.docx»</a> содержит оба блока результатов. Заполнение разобрано в конце методики. <a href="downloads/sample-results-00.zip">Результаты образца 00 для сверки</a> открываются после собственного выполнения.</p>', '<p><strong>Различить:</strong> паспорт и CSV — исходные данные; образец — объяснение; checks — заготовки; собственные отчёты — сдача.</p>')
     files+=route_card('3','Подготовить установщики',md('''- [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) — установить на основном компьютере до создания ВМ.
 - Windows 11 x64 ISO — образ учреждения либо [официальная ознакомительная редакция](https://www.microsoft.com/en-us/evalcenter/download-windows-11-enterprise); использовать при установке гостевой ОС.
 - [PostgreSQL 17.11 для Windows x64](https://get.enterprisedb.com/postgresql/postgresql-17.11-1-windows-x64.exe) — сервер, pgAdmin и командные инструменты; установить внутри ВМ.
@@ -220,7 +221,7 @@ def build():
     legacy={1:'guide.html#prepare',2:'guide.html#diagnostics',3:'reference.html#repair',4:'reference.html#maintenance',5:'guide.html#diagnostics',6:'reference.html#maintenance'}
     for old,target in legacy.items():
         write(str(old)+'.html',f'<!doctype html><html lang="ru"><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={target}"><title>ПМ.02</title><p><a href="{target}">Открыть раздел практики</a></p></html>')
-    write('README.md',f'# Учебная практика ПМ.02\n\n**Настройка и обеспечение работоспособности программных и аппаратных средств устройств инфокоммуникационных систем**\n\n- [Задание]({BASE}).\n- [Предметные области и индивидуальные стенды]({BASE}areas.html).\n- [Методические рекомендации]({BASE}guide.html).\n- [Диагностические случаи]({BASE}reference.html).\n- [Методические рекомендации — PDF](downloads/guide.pdf).\n- [Предметные области — PDF](downloads/subject-areas.pdf).\n')
+    write('README.md',f'# Учебная практика ПМ.02\n\n**Настройка и обеспечение работоспособности программных и аппаратных средств устройств инфокоммуникационных систем**\n\n- [Задание]({BASE}).\n- [Предметные области и индивидуальные стенды]({BASE}areas.html).\n- [Методические рекомендации]({BASE}guide.html).\n- [Диагностические случаи]({BASE}reference.html).\n- [Методические рекомендации — PDF](downloads/assignment.pdf).\n- [Предметные области — PDF](downloads/guide.pdf).\n- [Чистая форма отчёта](downloads/Отчет%20о%20выполнении.docx).\n')
     write('content/stands.json',json.dumps([demo]+profiles,ensure_ascii=False,indent=2)+'\n')
     print('Built: 30 individual areas, demonstration pack, assignment, method and reference.')
 
